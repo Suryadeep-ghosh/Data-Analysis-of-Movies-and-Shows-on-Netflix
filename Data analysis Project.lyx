@@ -1,0 +1,6601 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 1.5cm
+\rightmargin 2.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Graphics
+	filename C:/Users/LENOVO/Downloads/Presidency_University,_Kolkata_Logo.svg.png
+	scale 20
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Data Analysis Project 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Enter Course Name
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+About all Shows Available on Netflix 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Enter assignment number
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Department of Statistics
+\end_layout
+
+\begin_layout Author
+Registration No.
+ 18214110028 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Roll No.
+ STAT-008 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Name:- Suryadeep Ghosh
+\end_layout
+
+\begin_layout Standard
+In this project we try to analyze the 
+\begin_inset Quotes eld
+\end_inset
+
+Netflix TV Shows and Movies
+\begin_inset Quotes erd
+\end_inset
+
+ dataset.
+ This data set was created to list all shows available on Netflix streaming
+ and was acquired in May 2022 containing data available in the United States.
+ 
+\series bold
+Netflix
+\series default
+ is a subscription-based streaming service that allows people to watch TV
+ shows and movies without commercials on an internet-connected device.
+\end_layout
+
+\begin_layout Standard
+This dataset has two files containing the titles (titles.csv) and the cast
+ (credits.csv) for the title.
+ In this analysis we work with the 'titles.csv' file.This dataset contains
+ 5806 unique titles on Netflix with 15 columns containing their information,
+ including:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+id:
+\series default
+ The title ID on JustWatch.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+title:
+\series default
+ The name of the title.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+show_type:
+\series default
+ TV show or movie.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+description:
+\series default
+ A brief description.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+release_year:
+\series default
+ The release year.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+age_certification:
+\series default
+ The age certification.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+runtime:
+\series default
+ The length of the episode (SHOW) or movie.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+genres:
+\series default
+ A list of genres.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+production_countries:
+\series default
+ A list of countries that produced the title.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+seasons:
+\series default
+ Number of seasons if it's a SHOW.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+imdb_id:
+\series default
+ The title ID on IMDB.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+imdb_score:
+\series default
+ Score on IMDB.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+imdb_votes:
+\series default
+ Votes on IMDB.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+tmdb_popularity:
+\series default
+ Popularity on TMDB.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+tmdb_score:
+\series default
+ Score on TMDB.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+IMDb 
+\series default
+(an abbreviation of Internet Movie Database) is an online database of informatio
+n related to films, television series, home videos, video games, and streaming
+ content online – including cast, production crew and personal biographies,
+ plot summaries, trivia, ratings, and fan and critical reviews.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TMDB
+\series default
+ (The Movie Database) is a community built movie and TV database.
+\end_layout
+
+\begin_layout Standard
+In this project we applied various statistical methods and tools to predict
+ the IMDb and TMDB scores of a movie/show.
+ We divided the project in two parts.
+ 
+\end_layout
+
+\begin_layout Standard
+In the first part we performed the exploratory analysis where we analyzed
+ the data by drawing various diagrams to depict some dependence of the IMDb
+ Scores and TMDB Scores on different predictors and then made some crucial
+ observations from there.
+ We also observed some interesting insights in this part.
+\end_layout
+
+\begin_layout Standard
+In the second part we make conclusions about the observations we made earlier
+ in the exploratory analysis using statistical methods and tools i.e testing
+ of hypothesis, inference, estimation and various other regression methods.
+\end_layout
+
+\begin_layout Section*
+Importing the Dataset:
+\end_layout
+
+\begin_layout Standard
+First we import the dataset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+options(warn=-1)
+\end_layout
+
+\begin_layout Plain Layout
+
+data=read.csv("C:
+\backslash
+
+\backslash
+Users
+\backslash
+
+\backslash
+LENOVO
+\backslash
+
+\backslash
+Downloads
+\backslash
+
+\backslash
+netflix.csv")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We check dimension of the data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(data)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The names of the coloumns of the dataset are,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+names(data)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first few rows of the dataset are,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA,results='asis'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+library(xtable)
+\end_layout
+
+\begin_layout Plain Layout
+
+xtable(head(data))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the 
+\series bold
+'seasons'
+\series default
+ coloumn mostly consists of missing values which will not contribute to
+ our analysis.
+ So we remove that coloumn from the dataset and then remove other rows which
+ has missing values.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix=na.omit(data[,-10])
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now the dimension of the dataset is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We check the variable type of each coloumns of the dataset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+str(netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we work with this data.
+\end_layout
+
+\begin_layout Section*
+Exploratory Data Analysis:
+\end_layout
+
+\begin_layout Standard
+First we calculate the 
+\series bold
+summary measures
+\series default
+ of the variables in the data.
+\end_layout
+
+\begin_layout Subsubsection*
+type:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$type)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+release_year:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$release_year)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+runtime:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$runtime)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+production_countires:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$production_countries)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+imdb_score:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$imdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+imdb_votes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$imdb_votes)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+tmdb_popularity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$tmdb_popularity)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+tmdb_score:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix$tmdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now,
+\end_layout
+
+\begin_layout Standard
+We draw boxplots of the numeric variables of the data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(2,3))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$release_year,main="Release Year")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$runtime,main="Runtime")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$imdb_score,main="IMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$imdb_votes,main="IMDB Votes")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$tmdb_popularity,main="TMDB Popularity")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$tmdb_score,main="TMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we draw the scatterplot of different combinations of those variables
+ to observe any pattern of relationship among them.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(2,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$runtime,netflix$imdb_score,main="Runtime Vs.
+ IMDB Score",xlab="Runtime",ylab="IMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$imdb_score,netflix$imdb_votes,main="IMDB Votes Vs.
+ IMDB Scores",xlab="IMDB Scores",ylab="IMDB Votes")
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$runtime,netflix$tmdb_score,main="Runtime VS.
+ TMDB Score",xlab="Runtime",ylab="TMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$tmdb_score,netflix$tmdb_popularity,main="TMDB Score Vs.
+ TMDB Popularity",xlab="TMDB Score",ylab="TMDB Popularity")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also draw the histograms of these variables.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(2,3))
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$release_year,main="Histogram of Release Date",xlab="Release
+ Date")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$runtime,main="Histogram of Runtime",xlab="Runtime")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$imdb_score,main="Histogram of IMDB Score",xlab="IMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$imdb_votes,main="Histogram of IMDB Votes",xlab="IMDB Votes")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$tmdb_score,main="Histogram of TMDB Score",xlab="TMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$tmdb_popularity,main="Histogram of TMDB Popularity",xlab="TMDB
+ Popularity")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we try to see which movies or shows haave the highest and lowest rating
+ on IMDb and TMDB.
+\end_layout
+
+\begin_layout Subsection*
+IMDb:
+\end_layout
+
+\begin_layout Subsubsection*
+Highest Rating:
+\end_layout
+
+\begin_layout Standard
+The highest rating on IMDb is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+max(netflix$imdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The movie/show which has the highest rating on IMDb is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$title[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is a,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$type[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A short description of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$description[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The release year of this show is,
+\end_layout
+
+\begin_layout Standard
+`
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$release_year[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The age certification of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$age_certification[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Runtime of this show in hours is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$runtime[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The genre of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$genres[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The production country of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$production_countries[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The number of votes this show got on IMDb is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$imdb_votes[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Lowest Rating:
+\end_layout
+
+\begin_layout Standard
+The lowest rating on IMDb is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+min(netflix$imdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The movie/show which has the lowest rating on IMDb is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$title[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is a,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$type[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A short description of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$description[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The release year of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$release_year[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The age certification of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$age_certification[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Runtime of this show in hours is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$runtime[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The genre of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$genres[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The production country of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$production_countries[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The number of votes this show got on IMDb is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$imdb_votes[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+TMDB:
+\end_layout
+
+\begin_layout Subsubsection*
+Highest Rating:
+\end_layout
+
+\begin_layout Standard
+The highest rating on TMDB is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+max(netflix$tmdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The movies/shows which have the highest rating on TMDB are,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d=subset(netflix,netflix$tmdb_score==max(netflix$tmdb_score))
+\end_layout
+
+\begin_layout Plain Layout
+
+d$title
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We notice that a lot of movies/shows have this highest.
+ So we try to find the most popular one among them.
+\end_layout
+
+\begin_layout Standard
+The movie/show which has the highest popularity among them on TMDB is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$title[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is a,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$type[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A small description of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$description[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The release year of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$release_year[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The age-certification of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$age_certification[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The runtime of the show in hours is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$runtime[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The genre of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$genres[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The production country of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$production_countries[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The TMDB popularity of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+d$tmdb_popularity[which.max(d$tmdb_popularity)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Lowest Rating:
+\end_layout
+
+\begin_layout Standard
+The lowest rating on TMDB is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+min(netflix$tmdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The movie/show which has the lowest rating on TMDB is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$title[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is a,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$type[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A short description of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$description[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The release year of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$release_year[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The age certification of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$age_certification[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Runtime of this show in hours is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$runtime[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The genre of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$genres[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The production country of this show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$production_countries[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The TMDB popularity of the show is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$tmdb_popularity[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+@ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Now,
+\end_layout
+
+\begin_layout Standard
+We want to know the TMDB score of the show ('Breaking Bad') which has the
+ highest IMDb score.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$tmdb_score[which(netflix$title=="Breaking Bad")]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The TMDB score of the show ('He's Expecting') which has the lowest IMDb
+ score is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$tmdb_score[which(netflix$title=="He's Expecting")]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The IMDb score of the show ('The Haunted House') which has the highest TMDB
+ score is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$imdb_score[which(netflix$title=="The Haunted House")]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The IMDb score of the show which has the lowest TMDB score is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$imdb_score[which(netflix$title=="Inborn Pair")]
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So, we can observe that IMDb scores and TMDB scores are not really agreeing
+ to each other completely.
+ Though they agree on a general pattern that a show that has higher/lower
+ rating on IMDb also has a higher/lower rating on TMDB and vice versa.
+\end_layout
+
+\begin_layout Section*
+
+\bar under
+Comparison Between IMDb and TMDB scores using Exploratory Analysis:
+\end_layout
+
+\begin_layout Subsection*
+Comparson between IMDb and TMDB scores of US and Japan based Movies/Shows:
+\end_layout
+
+\begin_layout Standard
+We already know that movies and shows produced in the US are already world
+ famous but in recent years movies and shows produced in Japan are becoming
+ really popular worldwide.
+ So we want to compare the IMDb and TMDB score of US and Japan based movies/show
+s.
+\end_layout
+
+\begin_layout Standard
+We seperate all the data where production country is only US and only Japan.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+US=subset(netflix,netflix$production_countries=="['US']")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+JP=subset(netflix,netflix$production_countries=="['JP']")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of data where production country is only US,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(US)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of data where production country is only Japan,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(JP)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their IMdb Ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(US$imdb_score,main="US IMDb Score",xlab="US",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(JP$imdb_score,main="JP IMDb Score",xlab="JP",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that mean IMDb rating of movies/shows produced in Japan 
+\begin_inset Formula $(7.08125)$
+\end_inset
+
+ is higher than the mean IMDb rating of movies/shows produced in US 
+\begin_inset Formula $(6.552596)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Standard
+Then we plot the boxplot of their TMDB Ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(US$tmdb_score,main="US TMDB Score",xlab="US",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(JP$tmdb_score,main="JP TMDB Score",xlab="JP",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that mean TMDB rating of movies/shows produced in Japan 
+\begin_inset Formula $(7.433333)$
+\end_inset
+
+ is higher than the mean IMDb rating of movies/shows produced in US 
+\begin_inset Formula $(6.844582)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between IMDb and TMDB Scores of Movies and Shows:
+\end_layout
+
+\begin_layout Standard
+Now we are interested to see that if people enjoy movies or shows more.
+ Our hypothesis based on recent studies is that people like to watch TV-shows
+ more than Movies as TV shows can devote more time to the story than any
+ Movie.
+\end_layout
+
+\begin_layout Standard
+We seperate all the data for movies only and shows only.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+movie=subset(netflix,netflix$type=="MOVIE")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+show=subset(netflix,netflix$type=="SHOW")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for movies is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(movie)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for shows is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(show)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their IMdb Ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(movie$imdb_score,main="Movie IMDb Score",xlab="Movie",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(show$imdb_score,main="Show IMDb Score",xlab="Show",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that the mean IMDb score for movies 
+\begin_inset Formula $(6.266329)$
+\end_inset
+
+ is lower than mean IMDb score of shows 
+\begin_inset Formula $(7.026708)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave this here for inferenial data analysis.
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their TMDB Ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(movie$tmdb_score,main="Movie TMDB Score",xlab="Movie",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(show$tmdb_score,main="Show TMDB Score",xlab="Show",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that the mean TMDB score for movies 
+\begin_inset Formula $(6.440399)$
+\end_inset
+
+ is lower than mean TMDB score of shows 
+\begin_inset Formula $(7.489306)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave this here for inferenial data analysis.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between the IMDb and TMDB scores of Short and Long Duration movies/sh
+ows:
+\end_layout
+
+\begin_layout Standard
+Now we are interested to see whether people like movies/shows of longer
+ time duration or shorter time duration.
+\end_layout
+
+\begin_layout Standard
+We define movies/shows which have runtime 
+\begin_inset Formula $\leq80$
+\end_inset
+
+ as 
+\series bold
+short
+\series default
+ and which have runtime 
+\begin_inset Formula $>80$
+\end_inset
+
+ as 
+\series bold
+long
+\series default
+ movies/shows.
+\end_layout
+
+\begin_layout Standard
+First we seperate all the data for short movies/shows and for long movies/shows.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+short=subset(netflix,netflix$runtime<=80)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+long=subset(netflix,netflix$runtime>80)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for short movies/shows,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(short)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for long movies/shows,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(long)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their IMdb Ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(short$imdb_score,main="Short IMDb Score",xlab="Short",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(long$imdb_score,main="Long IMDb Score",xlab="Long",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that mean of the IMDb scores for short movies/shows 
+\begin_inset Formula $(6.879843)$
+\end_inset
+
+ is higher than mean of the IMDb scores for long movies/shows 
+\begin_inset Formula $(6.249964)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave this here for inferential data analysis.
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their TMDB ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(short$tmdb_score,main="Short TMDB Score",xlab="Short",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(long$tmdb_score,main="Long TMDB Score",xlab="Long",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that the mean of the TMDB scores for short movies/shows 
+\begin_inset Formula $(7.262352)$
+\end_inset
+
+ is higher than the mean of the TMDB scores for long movies/shows 
+\begin_inset Formula $(6.438054)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave this here for inferential data analysis.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between IMDb and TMDB scores of Comedy and Drama Genre movies/shows:
+\end_layout
+
+\begin_layout Standard
+Now we are interested to see whether people like movies/shows of Comedy
+ genre or Drama genre.
+\end_layout
+
+\begin_layout Standard
+First we seperate all the data for Comedy genre and for Drama genre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+comedy=subset(netflix,netflix$genres=="['comedy']")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+drama=subset(netflix,netflix$genres=="['drama']")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for comedy genre,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(comedy)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for Drama genre,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(drama)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their IMdb Ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(comedy$imdb_score,main="Comedy IMDb Score",xlab="Comedy",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(drama$imdb_score,main="Drama IMDb Score",xlab="Drama",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that mean of IMDb scores of movies/shows of Comedy genre 
+\begin_inset Formula $(6.262559)$
+\end_inset
+
+ is lower than that of movies/shows of Drama genre 
+\begin_inset Formula $(6.725108)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their TMDB ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(comedy$tmdb_score,main="Comedy TMDB Score",xlab="Comedy",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(drama$tmdb_score,main="Drama TMDB Score",xlab="Drama",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that mean of TMDB scores of movies/shows of Comedy genre 
+\begin_inset Formula $(6.466351)$
+\end_inset
+
+ is lower than that of movies/shows of Drama genre 
+\begin_inset Formula $(6.8)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between IMDb and TMDB scores of Old and New movies/shows:
+\end_layout
+
+\begin_layout Standard
+We define movies/shows which have release year 
+\begin_inset Formula $\leq2016$
+\end_inset
+
+ as 
+\series bold
+old
+\series default
+ movies/shows and which have release year 
+\begin_inset Formula $>2016$
+\end_inset
+
+ as 
+\series bold
+new
+\series default
+ movies/shows.
+\end_layout
+
+\begin_layout Standard
+First we seperate all the data for old movies/shows and for new movies/shows.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+old=subset(netflix,netflix$release_year<=2016)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+new=subset(netflix,netflix$release_year>2016)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for old movies/shows,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(old)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dimension of the data for new movies/shows,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(new)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their IMdb Ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(old$imdb_score,main="Old IMDb Score",xlab="Old",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(new$imdb_score,main="New IMDb Score",xlab="New",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that mean of IMDb scores of old movies/shows 
+\begin_inset Formula $(6.72538)$
+\end_inset
+
+ is higher than that of new movies/shows 
+\begin_inset Formula $(6.444026)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Standard
+We plot the boxplot of their TMDB ratings for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(old$tmdb_score,main="Old TMDB Score",xlab="Old",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(new$tmdb_score,main="New TMDB Score",xlab="New",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We observe that mean of TMDb scores of old movies/shows 
+\begin_inset Formula $(6.7056)$
+\end_inset
+
+ is lower than that of new movies/shows 
+\begin_inset Formula $(6.863479)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We leave it here for inferential data analysis.
+\end_layout
+
+\begin_layout Section*
+Inferential Data Analysis:
+\end_layout
+
+\begin_layout Standard
+Now we shall conduct inferential data analysis by various statistical methods
+ and tools like testing of hypothesis, regrsssion etc.
+\end_layout
+
+\begin_layout Standard
+First we want to test the observations we made in exploratory data analysis.
+\end_layout
+
+\begin_layout Subsection*
+Testing Theory:
+\end_layout
+
+\begin_layout Standard
+In exploratory data analysis we observed a number of differences of mean
+ values of IMDb and TMDB ratings in different cases.
+ Now we want to test whether the difference in mean is statistically significant
+ or not.
+\end_layout
+
+\begin_layout Standard
+Clearly this is a two sample test problem.
+\end_layout
+
+\begin_layout Standard
+So, first we have to test if the population variances are equal or not.
+ For that we conduct F-test.
+\end_layout
+
+\begin_layout Itemize
+If they are equal, we perform Fisher's t-test to test whether the difference
+ of their mean is statistically ssignificant or not.
+\end_layout
+
+\begin_layout Itemize
+If they are not equal, we encounter Behren-Fisher problem.
+ In that case we conduct Welch's approximate t-test to test whether the
+ difference of their mean is statistically ssignificant or not.
+\end_layout
+
+\begin_layout Section*
+
+\bar under
+Comparison Between IMDb and TMDB scores using Inferential Analysis:
+\end_layout
+
+\begin_layout Subsection*
+Comparson between IMDb and TMDB scores of US and Japan based Movies/Shows:
+\end_layout
+
+\begin_layout Subsubsection*
+IMDb:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{11}^{2}=\sigma_{12}^{2}\text{ Vs. }H_{1}:\sigma_{11}^{2}\neq\sigma_{12}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(US$imdb_score,JP$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.0005766$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is rejected.
+ i.e The population variances are not equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Welch's approximate t-test to compare their population
+ mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of IMDb ratings of US and Japan based movies is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of IMDb ratings of US and Japan based movies is less than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{1}=0\text{ Vs. }H_{1}:\delta_{1}<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(US$imdb_score,JP$imdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.0000000000007207$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is less than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of movies/shows produced in US is less than
+ the population mean rating of movies/shows produced in Japan.
+\end_layout
+
+\begin_layout Subsubsection*
+TMDB:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{21}^{2}=\sigma_{22}^{2}\text{ Vs. }H_{1}:\sigma_{21}^{2}\neq\sigma_{22}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(US$tmdb_score,JP$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.6644$
+\end_inset
+
+ which is 
+\begin_inset Formula $>0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is accepted i.e The population variances are equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Fisher's t-test to compare their population mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of TMDB ratings of US and Japan based movies/shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of TMDB ratings of US and Japan based movies/shows is less than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{2}=0\text{ Vs. }H_{1}:\delta_{2}<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(US$tmdb_score,JP$tmdb_score,var.equal=TRUE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $<0.00000000000000022$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is less than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of movies/shows produced in US is less than
+ the population mean rating of movies/shows produced in Japan.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between IMDb and TMDB Scores of Movies and Shows:
+\end_layout
+
+\begin_layout Subsubsection*
+IMDb:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{31}^{2}=\sigma_{32}^{2}\text{ Vs. }H_{1}:\sigma_{31}^{2}\neq\sigma_{32}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(movie$imdb_score,show$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.1079$
+\end_inset
+
+ which is 
+\begin_inset Formula $>0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is accepted i.e The population variances are equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Fisher's t-test to compare their population mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of IMDb ratings of movies and shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of IMDb ratings of movies and shows is less than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{3}=0\text{ Vs. }H_{1}:\delta_{3}<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(movie$imdb_score,show$imdb_score,var.equal=TRUE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $<0.00000000000000022$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is less than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of movies less than the population mean rating
+ of shows.
+\end_layout
+
+\begin_layout Subsubsection*
+TMDB:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{41}^{2}=\sigma_{42}^{2}\text{ Vs. }H_{1}:\sigma_{41}^{2}\neq\sigma_{42}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(movie$tmdb_score,show$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.0758$
+\end_inset
+
+ which is 
+\begin_inset Formula $>0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is accepted i.e The population variances are equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Fisher's t-test to compare their population mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of TMDB ratings of movies and shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of TMDB ratings of movies and shows is less than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{4}=0\text{ Vs. }H_{1}:\delta_{4}<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(movie$tmdb_score,show$tmdb_score,var.equal=TRUE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $<0.00000000000000022$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is less than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of movies less than the population mean rating
+ of shows.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between the IMDb and TMDB scores of Short and Long Duration movies/sh
+ows:
+\end_layout
+
+\begin_layout Subsubsection*
+IMDb:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{51}^{2}=\sigma_{52}^{2}\text{ Vs. }H_{1}:\sigma_{51}^{2}\neq\sigma_{52}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(short$imdb_score,long$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.3849$
+\end_inset
+
+ which is 
+\begin_inset Formula $>0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is accepted i.e The population variances are equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Fisher's t-test to compare their population mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of IMDb ratings of short and long duration movies/shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of IMDb ratings of short and long duration movies/shows is greater
+ than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{5}=0\text{ Vs. }H_{1}:\delta_{5}>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(short$imdb_score,long$imdb_score,var.equal=TRUE,alt="greater")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $<0.00000000000000022$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is greater than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of short duration movies/shows is greater
+ than the population mean rating of long duration.
+\end_layout
+
+\begin_layout Subsubsection*
+TMDB:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{61}^{2}=\sigma_{62}^{2}\text{ Vs. }H_{1}:\sigma_{61}^{2}\neq\sigma_{62}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(short$tmdb_score,long$tmdb_score,alternative = "two.sided") 
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.00000000002705$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is rejected i.e The population variances are not equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Welch's approximate t–test to compare their population
+ mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of TMDB ratings of short and long duration movies/shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of TMDB ratings of short and long duration movies/shows is greater
+ than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{6}=0\text{ Vs. }H_{1}:\delta_{6}>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(short$tmdb_score,long$tmdb_score,var.equal=FALSE,alt="greater")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $<0.00000000000000022$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is greater than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of short duration movies/shows is greater
+ than the population mean rating of long duration.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between IMDb and TMDB scores of Comedy and Drama Genre movies/shows:
+\end_layout
+
+\begin_layout Subsubsection*
+IMDb:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{71}^{2}=\sigma_{72}^{2}\text{ Vs. }H_{1}:\sigma_{71}^{2}\neq\sigma_{72}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(comedy$imdb_score,drama$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.04475$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is rejected i.e The population variances are not equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Welch's approximate t-test to compare their population
+ mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of IMDb ratings of comedy and drama genre movies/shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of IMDb ratings of comedy and drama genre movies/shows is less than
+ 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{7}=0\text{ Vs. }H_{1}:\delta_{7}<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(comedy$imdb_score,drama$imdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.00000013$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is less than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of comedy genre movies/shows is less than
+ the population mean rating of drama genre movies/shows.
+\end_layout
+
+\begin_layout Subsubsection*
+TMDB:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{81}^{2}=\sigma_{82}^{2}\text{ Vs. }H_{1}:\sigma_{81}^{2}\neq\sigma_{82}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(comedy$tmdb_score,drama$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.005377$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is rejected i.e The population variances are not equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Welch's approximate t-test to compare their population
+ mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of TMDB ratings of comedy and drama genre movies/shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of TMDB ratings of comedy and drama genre movies/shows is less than
+ 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{8}=0\text{ Vs. }H_{1}:\delta_{8}<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(comedy$tmdb_score,drama$tmdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.000632$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is less than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of comedy genre movies/shows is less than
+ the population mean rating of drama genre movies/shows.
+\end_layout
+
+\begin_layout Subsection*
+Comparison Between IMDb and TMDB scores of Old and New movies/shows:
+\end_layout
+
+\begin_layout Subsubsection*
+IMDb:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{91}^{2}=\sigma_{92}^{2}\text{ Vs. }H_{1}:\sigma_{91}^{2}\neq\sigma_{82}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(old$imdb_score,new$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.4954$
+\end_inset
+
+ which is 
+\begin_inset Formula $>0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is accepted i.e The population variances are equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Fisher's t-test to compare their population mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of IMDb ratings of old and new movies/shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of IMDb ratings of old and new movies/shows is greater than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{9}=0\text{ Vs. }H_{1}:\delta_{9}>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(old$imdb_score,new$imdb_score,var.equal=TRUE,alt="greater") 
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $<0.00000000000000022$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is greater than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of old movies/shows is greater than the populatio
+n mean rating of new movies/shows.
+\end_layout
+
+\begin_layout Subsubsection*
+TMDB:
+\end_layout
+
+\begin_layout Standard
+First we want to test if the variance of these two samples are equal.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the population variances are equal and the alternati
+ve hypothesis is that they are not equal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\sigma_{10,1}^{2}=\sigma_{10,2}^{2}\text{ Vs. }H_{1}:\sigma_{10,1}^{2}\neq\sigma_{10,2}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(old$tmdb_score,new$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.0003434$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the null hypotheis is rejected i.e The population variances are not equal.
+\end_layout
+
+\begin_layout Standard
+So, we have to conduct Welch's approximate t-test to compare their population
+ mean.
+\end_layout
+
+\begin_layout Standard
+The null hypothesis is that the difference between the population means
+ of TMDB ratings of old and new movies/shows is 0
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+The alternative hypotheis is that the difference between the population
+ means of TMDB ratings of old and new movies/shows is less than 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{0}:\delta_{10}=0\text{ Vs. }H_{1}:\delta_{10}<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(old$tmdb_score,new$tmdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that the p-value
+\begin_inset Formula $=0.000001183$
+\end_inset
+
+ which is 
+\begin_inset Formula $<0.05$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So the null hypothesis is rejected i.e.
+ the difference between population means is less than 0.
+\end_layout
+
+\begin_layout Standard
+So, The population mean rating of old movies/shows is less than the population
+ mean rating of new movies/shows.
+\end_layout
+
+\begin_layout Subsection*
+Model Fitting:
+\end_layout
+
+\begin_layout Standard
+Now we want to predict IMDb ratings and TMDb ratings of a show using other
+ predictor variables like release year, runtime, imdb votes, type, tmdb
+ popularity.
+ So we fit regression models.
+\end_layout
+
+\begin_layout Standard
+First we conduct variable selection process using LASSO method.
+\end_layout
+
+\begin_layout Subsubsection*
+Variable SelctionUsing LASSO Mehtod in case of IMDb Score:
+\end_layout
+
+\begin_layout Standard
+Here we conduct variable selection using LASSO in order to fit a model to
+ predict IMDb score of a movie/show using the predictors release year, runtime,
+ imdb votes, tmdb popularity, tmdb score.
+ We are discarding the 'type' covariate as LASSO method can not deal with
+ factor covariates.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+cov1=data.frame(netflix$release_year,netflix$runtime,netflix$imdb_votes,netflix$t
+mdb_score,netflix$tmdb_popularity)
+\end_layout
+
+\begin_layout Plain Layout
+
+y1=netflix$imdb_score
+\end_layout
+
+\begin_layout Plain Layout
+
+library(lars)
+\end_layout
+
+\begin_layout Plain Layout
+
+mod.lasso1=lars(as.matrix(cov1),y1,normalize=F)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The plot of coefficient paths is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(mod.lasso1,xvar="df") #--plotting-coef-paths--
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficients for each step in path are,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso1) #--coeffs-for-each-step-in-path
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using cross validation to estimate optimal position in path,
+\end_layout
+
+\begin_layout Standard
+The cross validation MSE plot,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+cv.lasso1=cv.lars(as.matrix(cov1),y1,type="lasso") #--cross-validation
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficients are,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+limit1=min(cv.lasso1$cv)+cv.lasso1$cv.error[which.min(cv.lasso1$cv)]
+\end_layout
+
+\begin_layout Plain Layout
+
+s.cv1=cv.lasso1$index[min(which(cv.lasso1$cv<limit1))]
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso1,s=s.cv1,mode="fraction")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Fitting a LASSO Regression Model to Predict TMDB Score:
+\end_layout
+
+\begin_layout Standard
+Here we conduct variable selection using LASSO in order to fit a model to
+ predict TMDB score of a movie/show using the predictors release year, runtime,
+ imdb votes, tmdb popularity, imdb score.
+ We are discarding the 'type' covariate as LASSO method can not deal with
+ factor covariates.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+cov2=data.frame(netflix$release_year,netflix$runtime,netflix$imdb_votes,netflix$i
+mdb_score,netflix$tmdb_popularity)
+\end_layout
+
+\begin_layout Plain Layout
+
+y2=netflix$tmdb_score
+\end_layout
+
+\begin_layout Plain Layout
+
+library(lars)
+\end_layout
+
+\begin_layout Plain Layout
+
+mod.lasso2=lars(as.matrix(cov2),y2,normalize=F)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The plot of coefficient paths is,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(mod.lasso2,xvar="df") #--plotting-coef-paths--
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficients for each step in path are,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso2) #--coeffs-for-each-step-in-path
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using cross validation to estimate optimal position in path,
+\end_layout
+
+\begin_layout Standard
+The cross validation MSE plot,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+cv.lasso2=cv.lars(as.matrix(cov2),y2,type="lasso") #--cross-validation
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The coefficients are,
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+limit2=min(cv.lasso2$cv)+cv.lasso2$cv.error[which.min(cv.lasso2$cv)]
+\end_layout
+
+\begin_layout Plain Layout
+
+s.cv2=cv.lasso2$index[min(which(cv.lasso2$cv<limit2))]
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso2,s=s.cv2,mode="fraction") 
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We see that in both cases all the variables are significant.
+\end_layout
+
+\begin_layout Subsubsection*
+Fitting Multiple Linear Regression Model to Predict IMDb Score:
+\end_layout
+
+\begin_layout Standard
+Here we try to fit a multiple linear regression model to predict IMDb score
+ of a movie/show using the predictors release year, runtime, imdb votes,
+ type, tmdb popularity, tmdb score.
+\end_layout
+
+\begin_layout Standard
+The model will be of the form,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{i}=\beta_{0}+\beta_{1}x_{i1}+\beta_{2}x_{i2}+\beta_{3}x_{i3}+\beta_{4}x_{i4}+\beta_{5}x_{i5}+\beta_{6}x_{i6}\text{ }\forall i=1(1)5041
+\]
+
+\end_inset
+
+ where,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i1}=$
+\end_inset
+
+ Release year of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i2}=$
+\end_inset
+
+ Runtime of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i3}=$
+\end_inset
+
+ IMDb votes of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i4}=$
+\end_inset
+
+ level 'show' of the factor covariate Type of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i5}=$
+\end_inset
+
+ TMDB score of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i6}=$
+\end_inset
+
+ TMDB popularity of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA,results='asis'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+model1=lm(imdb_score~release_year+runtime+imdb_votes+as.factor(type)+tmdb_score+t
+mdb_popularity,data=netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+xtable(summary(model1))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot some graphs, Q-Q plot to understand the model better.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(model1)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After fitting the model we see that all the covariates are significant to
+ the model.
+\end_layout
+
+\begin_layout Subsubsection*
+Fitting Multiple Linear Regression Model to Predict TMDB Score:
+\end_layout
+
+\begin_layout Standard
+Here we try to fit a multiple linear regression model to predict TMDB score
+ of a movie/show using the predictors release year, runtime, imdb votes,
+ type, tmdb popularity, imdb score.
+\end_layout
+
+\begin_layout Standard
+The model will be of the form,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{i}=\beta_{0}+\beta_{1}x_{i1}+\beta_{2}x_{i2}+\beta_{3}x_{i3}+\beta_{4}x_{i4}+\beta_{5}x_{i5}+\beta_{6}x_{i6}\text{ }\forall i=1(1)5041
+\]
+
+\end_inset
+
+ where,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i1}=$
+\end_inset
+
+ Release year of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i2}=$
+\end_inset
+
+ Runtime of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i3}=$
+\end_inset
+
+ TMDB popularity of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i4}=$
+\end_inset
+
+ level 'show' of the factor covariate 'Type' of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i5}=$
+\end_inset
+
+ IMDb score of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i6}=$
+\end_inset
+
+ IMDb votes of the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ movie/show.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA,results='asis'>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+model2=lm(tmdb_score~release_year+runtime+tmdb_popularity+as.factor(type)+imdb_sc
+ore+imdb_votes,data=netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+xtable(summary(model2))
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We plot some graphs, Q-Q plot to understand the model better.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=F,comment=NA>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(model2)
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After fitting the model we see that all the covariates are significant to
+ the model.
+\end_layout
+
+\begin_layout Section*
+Conclusions and Discussions:
+\end_layout
+
+\begin_layout Standard
+Based on both exploratory and inferential data analysis, in the light of
+ given data we conclude that,
+\end_layout
+
+\begin_layout Enumerate
+People enjoy movies/shows produced in US more than movies/shows produced
+ in Japan.
+ This confirms the recent trend of watching japanese media all around the
+ world.
+\end_layout
+
+\begin_layout Enumerate
+People enjoy watching TV shows more than watching movies.
+\end_layout
+
+\begin_layout Enumerate
+People enjoy watching short duration movies/shows rather than long duration
+ movies/shows.
+ 
+\end_layout
+
+\begin_layout Enumerate
+People enjoy watching movies/shows of drama genre rather than of comedy
+ genre.
+\end_layout
+
+\begin_layout Enumerate
+On IMDb, people like older movies/shows more than newer movies/shows.
+ On the contrary on TMDB, people like newer movies/shows more than older
+ movies/shows.
+\end_layout
+
+\begin_layout Enumerate
+The IMDb rating of a movie/show depend on the 
+\series bold
+Release Year
+\series default
+, 
+\series bold
+Runtime
+\series default
+, 
+\series bold
+Type
+\series default
+, 
+\series bold
+Number of IMDb Votes
+\series default
+, 
+\series bold
+TMDB score
+\series default
+ and 
+\series bold
+TMDB popularity
+\series default
+ of that movie/show.
+\end_layout
+
+\begin_layout Enumerate
+The TMDB rating of a movie/show depend on the 
+\series bold
+Release Year
+\series default
+, 
+\series bold
+Runtime
+\series default
+, 
+\series bold
+Type
+\series default
+, 
+\series bold
+Number of IMDb votes
+\series default
+, 
+\series bold
+IMDb score
+\series default
+ and 
+\series bold
+Number of IMDb Votes
+\series default
+ of that movie/show.
+\end_layout
+
+\begin_layout Section*
+Appendix:
+\end_layout
+
+\begin_layout Subsection*
+R Codes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<eval=F>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+data=read.csv("C:
+\backslash
+
+\backslash
+Users
+\backslash
+
+\backslash
+LENOVO
+\backslash
+
+\backslash
+Downloads
+\backslash
+
+\backslash
+netflix.csv")
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(data)
+\end_layout
+
+\begin_layout Plain Layout
+
+names(data)
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+str(netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(2,3))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$release_year,main="Release Year")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$runtime,main="Runtime")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$imdb_score,main="IMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$imdb_votes,main="IMDB Votes")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$tmdb_popularity,main="TMDB Popularity")
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(netflix$tmdb_score,main="TMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(2,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$runtime,netflix$imdb_score,main="Runtime Vs.
+ IMDB Score",xlab="Runtime",ylab="IMDB Score"
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$imdb_score,netflix$imdb_votes,main="IMDB Votes Vs.
+ IMDB Scores",xlab="IMDB Scores",ylab="IMDB Votes")
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$runtime,netflix$tmdb_score,main="Runtime VS.
+ TMDB Score",xlab="Runtime",ylab="TMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(netflix$tmdb_score,netflix$tmdb_popularity,main="TMDB Score Vs.
+ TMDB Popularity",xlab="TMDB Score",ylab="TMDB Popularity")
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(2,3)) 
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$release_year,main="Histogram of Release Date",xlab="Release
+ Date")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$runtime,main="Histogram of Runtime",xlab="Runtime")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$imdb_score,main="Histogram of IMDB Score",xlab="IMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$imdb_votes,main="Histogram of IMDB Votes",xlab="IMDB Votes")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$tmdb_score,main="Histogram of TMDB Score",xlab="TMDB Score")
+\end_layout
+
+\begin_layout Plain Layout
+
+hist(netflix$tmdb_popularity,main="Histogram of TMDB Popularity",xlab="TMDB
+ Popularity")
+\end_layout
+
+\begin_layout Plain Layout
+
+max(netflix$imdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$title[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$type[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$description[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$release_year[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$age_certification[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$runtime[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$genres[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$production_countries[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$imdb_votes[which.max(netflix$imdb_score)] 
+\end_layout
+
+\begin_layout Plain Layout
+
+min(netflix$imdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$title[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$type[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$description[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$release_year[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$age_certification[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$runtime[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$genres[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$production_countries[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$imdb_votes[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+max(netflix$tmdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$title[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$type[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$description[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$release_year[which.max(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$age_certification[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$runtime[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$genres[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$production_countries[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$tmdb_popularity[which.max(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+min(netflix$tmdb_score)
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$title[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$type[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$description[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$release_year[which.min(netflix$imdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$age_certification[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$runtime[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$genres[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$production_countries[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$tmdb_popularity[which.min(netflix$tmdb_score)]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$tmdb_score[which(netflix$title=="Breaking Bad")]
+\end_layout
+
+\begin_layout Plain Layout
+
+netflix$imdb_score[which(netflix$title=="Pink Zone")]
+\end_layout
+
+\begin_layout Plain Layout
+
+US=subset(netflix,netflix$production_countries=="['US']")
+\end_layout
+
+\begin_layout Plain Layout
+
+JP=subset(netflix,netflix$production_countries=="['JP']") 
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(US)
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(JP)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(US$imdb_score,main="US IMDB Score",xlab="US",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(JP$imdb_score,main="JP IMDB Score",xlab="JP",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(US$imdb_score,JP$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(US$tmdb_score,JP$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(US$imdb_score,JP$imdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(US$tmdb_score,JP$tmdb_score,var.equal=TRUE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+movie=subset(netflix,netflix$type=="MOVIE")
+\end_layout
+
+\begin_layout Plain Layout
+
+show=subset(netflix,netflix$type=="SHOW")
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(movie)
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(show)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(movie$imdb_score,main="Movie IMDB Score",xlab="Movie",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(show$imdb_score,main="Show IMDB Score",xlab="Show",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(movie$imdb_score,show$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(movie$tmdb_score,show$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(movie$imdb_score,show$imdb_score,var.equal=TRUE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(movie$tmdb_score,show$tmdb_score,var.equal=TRUE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+short=subset(netflix,netflix$runtime<=80)
+\end_layout
+
+\begin_layout Plain Layout
+
+long=subset(netflix,netflix$runtime>80) 
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(short)
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(long)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(short$imdb_score,main="Short IMDB Score",xlab="Short",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(long$imdb_score,main="Long IMDB Score",xlab="Long",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(short$imdb_score,long$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(short$tmdb_score,long$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(short$imdb_score,long$imdb_score,var.equal=TRUE,alt="greater")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(short$tmdb_score,long$tmdb_score,var.equal=FALSE,alt="greater")
+\end_layout
+
+\begin_layout Plain Layout
+
+comedy=subset(netflix,netflix$genres=="['comedy']")
+\end_layout
+
+\begin_layout Plain Layout
+
+drama=subset(netflix,netflix$genres=="['drama']")
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(comedy)
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(drama)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(comedy$imdb_score,main="Comedy IMDB Score",xlab="Comedy",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(drama$imdb_score,main="Drama IMDB Score",xlab="Drama",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(comedy$imdb_score,drama$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(comedy$tmdb_score,drama$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(comedy$imdb_score,drama$imdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(comedy$tmdb_score,drama$tmdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+old=subset(netflix,netflix$release_year<=2016)
+\end_layout
+
+\begin_layout Plain Layout
+
+new=subset(netflix,netflix$release_year>2016)
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(old)
+\end_layout
+
+\begin_layout Plain Layout
+
+dim(new)
+\end_layout
+
+\begin_layout Plain Layout
+
+par(mfrow=c(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(old$imdb_score,main="Old IMDB Score",xlab="Old",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+boxplot(new$imdb_score,main="New IMDB Score",xlab="New",ylim=c(0,10))
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(old$imdb_score,new$imdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+var.test(old$tmdb_score,new$tmdb_score,alternative = "two.sided")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(old$imdb_score,new$imdb_score,var.equal=TRUE,alt="greater")
+\end_layout
+
+\begin_layout Plain Layout
+
+t.test(old$tmdb_score,new$tmdb_score,var.equal=FALSE,alt="less")
+\end_layout
+
+\begin_layout Plain Layout
+
+model1=lm(imdb_score~release_year+runtime+imdb_votes+as.factor(type)+tmdb_score+t
+mdb_popularity,data=netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(model1)
+\end_layout
+
+\begin_layout Plain Layout
+
+model2=lm(tmdb_score~release_year+runtime+tmdb_popularity+as.factor(type)+imdb_sc
+ore+imdb_votes,data=netflix)
+\end_layout
+
+\begin_layout Plain Layout
+
+summary(model2)
+\end_layout
+
+\begin_layout Plain Layout
+
+cov1=data.frame(netflix$release_year,netflix$runtime,netflix$imdb_votes,netflix$t
+mdb_score,netflix$tmdb_popularity)
+\end_layout
+
+\begin_layout Plain Layout
+
+y1=netflix$imdb_score
+\end_layout
+
+\begin_layout Plain Layout
+
+library(lars)
+\end_layout
+
+\begin_layout Plain Layout
+
+mod.lasso1=lars(as.matrix(cov1),y1,normalize=F) plot(mod.lasso1,xvar="df")
+ #--plotting-coef-paths--
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso1) #--coeffs-for-each-step-in-path
+\end_layout
+
+\begin_layout Plain Layout
+
+cv.lasso1=cv.lars(as.matrix(cov1),y1,type="lasso") #--cross-validation
+\end_layout
+
+\begin_layout Plain Layout
+
+limit1=min(cv.lasso1$cv)+cv.lasso1$cv.error[which.min(cv.lasso1$cv)]
+\end_layout
+
+\begin_layout Plain Layout
+
+s.cv1=cv.lasso1$index[min(which(cv.lasso1$cv<limit1))]
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso1,s=s.cv1,mode="fraction")
+\end_layout
+
+\begin_layout Plain Layout
+
+cov2=data.frame(netflix$release_year,netflix$runtime,netflix$imdb_votes,netflix$i
+mdb_score,netflix$tmdb_popularity)
+\end_layout
+
+\begin_layout Plain Layout
+
+y2=netflix$tmdb_score
+\end_layout
+
+\begin_layout Plain Layout
+
+library(lars)
+\end_layout
+
+\begin_layout Plain Layout
+
+mod.lasso2=lars(as.matrix(cov2),y2,normalize=F)
+\end_layout
+
+\begin_layout Plain Layout
+
+plot(mod.lasso2,xvar="df") #--plotting-coef-paths--
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso2) #--coeffs-for-each-step-in-path
+\end_layout
+
+\begin_layout Plain Layout
+
+cv.lasso2=cv.lars(as.matrix(cov2),y2,type="lasso") #--cross-validation
+\end_layout
+
+\begin_layout Plain Layout
+
+limit2=min(cv.lasso2$cv)+cv.lasso2$cv.error[which.min(cv.lasso2$cv)]
+\end_layout
+
+\begin_layout Plain Layout
+
+s.cv2=cv.lasso2$index[min(which(cv.lasso2$cv<limit2))]
+\end_layout
+
+\begin_layout Plain Layout
+
+coef(mod.lasso2,s=s.cv2,mode="fraction")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Bibliography:
+\end_layout
+
+\begin_layout Enumerate
+To download the CSV file of the dataset, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Click Here"
+target "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Information about Netflix: 
+\begin_inset CommandInset href
+LatexCommand href
+name "click here"
+target "https://en.wikipedia.org/wiki/Netflix"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Information about IMDb: 
+\begin_inset CommandInset href
+LatexCommand href
+name "click here"
+target "https://en.wikipedia.org/wiki/IMDb"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Information about TMDB: 
+\begin_inset CommandInset href
+LatexCommand href
+name "click here"
+target "https://www.themoviedb.org/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
